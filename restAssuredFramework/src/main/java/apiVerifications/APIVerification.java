@@ -16,7 +16,7 @@ public class APIVerification extends ExtentReportListner {
 		try {
 			Assert.assertEquals(statusCode, response.getStatusCode());
 			test.log(LogStatus.PASS,
-					"Successfully validdated status code, status code is :: " + response.getStatusCode());
+					"Successfully validated status code, status code is :: " + response.getStatusCode());
 		} catch (AssertionError e) {
 			test.log(LogStatus.FAIL, e.fillInStackTrace());
 			test.log(LogStatus.FAIL,
